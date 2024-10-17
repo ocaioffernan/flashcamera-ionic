@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>camera</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Câmera</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+    <ion-button expand="block" (click)= "tirarFoto()" class="tirarFoto"> 
+       Tirar Foto
+      <ion-card [hidden] = "!foto">
+        <img src = "{{foto}}"/>
+      </ion-card>
+    
+    </ion-button>
+</ion-content>
